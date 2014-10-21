@@ -1,0 +1,20 @@
+{
+    "name": "awakenweb/beverage-scss",
+    "description": "Scss and Compass compiler module for Beverage task runner",
+    "keywords": ["task", "runner", "sass", "compass"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4",
+        "awakenweb/beverage": "*",
+        "leafo/scssphp-compass": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Awakenweb\\BeverageScss\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+}
