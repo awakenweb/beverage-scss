@@ -39,7 +39,7 @@ function defaultTask()
 
 function scss()
 {
-    Beverage::files('*.scss', ['scss'])
+    Beverage::files('main.scss', ['scss'])
             ->then(new Scss('scss', true, Scss::nested))
             ->destination('build/css');
 }
