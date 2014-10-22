@@ -40,7 +40,7 @@ function defaultTask()
 function scss()
 {
     Beverage::files('main.scss', ['scss'])
-            ->then(new Scss('scss', true, Scss::nested))
+            ->then(new Scss('scss', Scss::USE_COMPASS, Scss::NESTED))
             ->destination('build/css');
 }
 
@@ -52,12 +52,12 @@ Options
 
 The `Scss` class accepts 3 parameters :
 
-* `importPath` : tells the Scss compiler where to search for when it encounters an `@include` directive.
+* `importPath` : tells the Scss compiler where to search for when it encounters an `@include` or `@import` directives.
 
-* `useCompass` : self-explanatory. true or false.
+* `useCompass` : self-explanatory. True or False. You can use Scss::USE_COMPASS or Scss::NO_COMPASS for better maintenability.
 
-* `formatter` : choose from the 3 available formatters : `Scss::nested`, `Scss::compressed`, or `Scss::normal`.
-* 
+* `formatter` : choose from the 3 available formatters : `Scss::NESTED`, `Scss::COMPRESSED`, or `Scss::NORMAL`.
+*
 
 
 Contributing
@@ -78,12 +78,12 @@ __New Features__
 * __Before__ sending a Pull Request for a new feature you want to add directly to the Beverage codebase, please contact Mathieu SAVELLI by email. If the feature is found to be a good fit for Beverage, you are free to make a pull request.
 
 * __If you like this package, the best thing you can do is to provide new awesome modules for Beverage and notify me. I'll add them to this readme.__
- 
+
 Contributors
 ------------
 
 * Main developer: __Mathieu SAVELLI__ (_mathieu.savelli@awakenweb.fr_)
- 
+
 
 License
 -------

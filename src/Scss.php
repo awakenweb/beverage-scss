@@ -18,13 +18,15 @@ use Awakenweb\Beverage\Modules\Module;
 class Scss implements Module
 {
 
-    const compressed = 'scss_formatter_compressed';
-    const nested     = 'scss_formatter_nested ';
-    const normal     = 'scss_formatter';
+    const COMPRESSED  = 'scss_formatter_compressed';
+    const NESTED      = 'scss_formatter_nested ';
+    const NORMAL      = 'scss_formatter';
+    const USE_COMPASS = true;
+    const NO_COMPASS  = false;
 
     protected $compiler;
 
-    public function __construct($importPath = 'scss', $useCompass = false, $formatter = self::nested)
+    public function __construct($importPath = 'scss', $useCompass = false, $formatter = self::NESTED)
     {
         $this->compiler = new \Leafo\ScssPhp\Compiler();
         $this->compiler->addImportPath($importPath);
