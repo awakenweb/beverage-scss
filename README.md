@@ -54,7 +54,7 @@ The `Scss` class accepts 3 parameters :
 
 * `importPath` : tells the Scss compiler where to search for when it encounters an `@include` or `@import` directives.
 
-* `useCompass` : self-explanatory. True or False. You can use Scss::USE_COMPASS or Scss::NO_COMPASS for better maintenability.
+* `useCompass` : self-explanatory. True or False. You can use `Scss::USE_COMPASS` or `Scss::NO_COMPASS` for better maintenability.
 
 * `formatter` : choose from the 3 available formatters : `Scss::NESTED`, `Scss::COMPRESSED`, or `Scss::NORMAL`.
 *
