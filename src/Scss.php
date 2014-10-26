@@ -19,6 +19,7 @@ class Scss implements Module
 {
 
     const COMPRESSED  = 'scss_formatter_compressed';
+    const CRUNCHED    = 'scss_formatter_crunched';
     const NESTED      = 'scss_formatter_nested ';
     const NORMAL      = 'scss_formatter';
     const USE_COMPASS = true;
@@ -26,7 +27,7 @@ class Scss implements Module
 
     protected $compiler;
 
-    public function __construct($importPath = 'scss', $useCompass = false, $formatter = self::NESTED)
+    public function __construct($importPath = 'scss', $useCompass = false, $formatter = self::CRUNCHED)
     {
         $this->compiler = new \Leafo\ScssPhp\Compiler();
         $this->compiler->addImportPath($importPath);

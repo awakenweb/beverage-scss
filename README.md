@@ -56,7 +56,7 @@ The `Scss` class accepts 3 parameters :
 
 * `useCompass` : self-explanatory. True or False. You can use `Scss::USE_COMPASS` or `Scss::NO_COMPASS` for better maintenability.
 
-* `formatter` : choose from the 3 available formatters : `Scss::NESTED`, `Scss::COMPRESSED`, or `Scss::NORMAL`.
+* `formatter` : choose from the 4 available formatters : `Scss::NESTED`, `Scss::COMPRESSED`, `Scss::CRUNCHED`, or `Scss::NORMAL`. (`CRUNCHED` is equivalent to `COMPRESSED` but also stripes CSS comments)
 
 
 Contributing
