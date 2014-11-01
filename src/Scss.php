@@ -20,7 +20,7 @@ class Scss implements Module
 
     const COMPRESSED  = 'scss_formatter_compressed';
     const CRUNCHED    = 'scss_formatter_crunched';
-    const NESTED      = 'scss_formatter_nested ';
+    const NESTED      = 'scss_formatter_nested';
     const NORMAL      = 'scss_formatter';
     const USE_COMPASS = true;
     const NO_COMPASS  = false;
